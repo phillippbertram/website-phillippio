@@ -6,7 +6,17 @@
       <Nuxt />
       <TheFooter />
       <!--    <OffCanvasMobileMenu />-->
-      <!--    <BackToTop />-->
+      <TheBackToTop />
     </div>
   </div>
 </template>
+
+<!--<script>-->
+<!--import TheBackToTop from '../components/TheBackToTop'-->
+
+<!--export default {-->
+<!--  components: {-->
+<!--    TheBackToTop-->
+<!--  }-->
+<!--}-->
+<!--</script>-->
