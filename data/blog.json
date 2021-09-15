@@ -1,0 +1,168 @@
+{
+    "blog": {
+        "sectionTitle": "Latest Post",
+        "sectionTitleWaterText": "Latest Post",
+        "blogPosts": [
+            {
+                "id": 1,
+                "title": "Despite not being built for business, it does let you display",
+                "slug": "despite-not-being-built-for-business-it-does-let-you-display-01",
+                "image": "/img/blog/blog-1.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "15 May, 2021"
+            },
+            {
+                "id": 2,
+                "title": "There are many things Google looks at when analyzing website.",
+                "slug": "there-are-many-things-google-looks-at-when-analyzing-website-02",
+                "image": "/img/blog/blog-2.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "18 Jun, 2021"
+            },
+            {
+                "id": 3,
+                "title": "Google handles billions websites every day. How does it do that",
+                "slug": "google-handles-billions-websites-every-day-how-does-it-do-that-03",
+                "image": "/img/blog/blog-3.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "22 Jul, 2021"
+            },
+            {
+                "id": 4,
+                "title": "How to get your website into Google’s index with right way",
+                "slug": "how-to-get-your-website-into-google-index-with-right-way-04",
+                "image": "/img/blog/blog-4.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "08 Aug, 2021"
+            },
+            {
+                "id": 5,
+                "title": "Before your site can appear in the search results, search engine",
+                "slug": "before-your-site-can-appear-in-the-search-results-search-engine-05",
+                "image": "/img/blog/blog-5.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "28 Feb, 2021"
+            },
+            {
+                "id": 6,
+                "title": "Ready to launch a blog with these free blog sites for ever",
+                "slug": "ready-to-launch-a-blog-with-these-free-blog-sites-for-ever-06",
+                "image": "/img/blog/blog-6.jpg",
+                "comment": 4,
+                "like": 15,
+                "postDate": "16 Jan, 2021"
+            }
+        ]
+    },
+    "sidebar": {
+        "searchTitle": "Search",
+        "categoryTitle": "Categories",
+        "categories": [
+            {
+                "title": "web development",
+                "count": "30"
+            },
+            {
+                "title": "web design",
+                "count": "15"
+            },
+            {
+                "title": "apps development",
+                "count": "25"
+            },
+            {
+                "title": "digital marketing",
+                "count":  "22"
+            },
+            {
+                "title": "SEO analyst",
+                "count": "08"
+            }
+        ],
+        "recentPostTitle": "Recent Posts",
+        "recentPosts": [
+            {
+                "image": "/img/blog/recent-01.jpg",
+                "alt": "post thumbnail",
+                "title": "Despite being built for business",
+                "date": "15 June, 2020"
+            },
+            {
+                "image": "/img/blog/recent-02.jpg",
+                "alt": "post thumbnail",
+                "title": "Ready to launch a blog with these",
+                "date": "18 July, 2020"
+            },
+            {
+                "image": "/img/blog/recent-03.jpg",
+                "alt": "post thumbnail",
+                "title": "Before your site can appear",
+                "date": "25 May, 2020"
+            },
+            {
+                "image": "/img/blog/recent-04.jpg",
+                "alt": "post thumbnail",
+                "title": "There are many things Google",
+                "date": "09 March, 2020"
+            }
+        ],
+        "tagTitle": "Tags",
+        "tags": [
+            {
+                "name": "Development",
+                "link": "/blog"
+            },
+            {
+                "name": "Design",
+                "link": "/blog"
+            },
+            {
+                "name": "marketing",
+                "link": "/blog"
+            },
+            {
+                "name": "Software",
+                "link": "/blog"
+            },
+            {
+                "name": "SEO",
+                "link": "/blog"
+            },
+            {
+                "name": "Apps",
+                "link": "/blog"
+            }
+        ]
+    },
+    "blogComment": {
+        "heading": "What our users think about this blog post (02)",
+        "comments": [
+            {
+                "isReply": false,
+                "authorName": "Simon",
+                "authorImage": "/img/blog/comment-01.jpg",
+                "CommentTime": "Posted on Jan 15, 2020 at 09:15pm",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
+            },
+            {
+                "isReply": true,
+                "authorName": "Henry",
+                "authorImage": "/img/blog/comment-02.jpg",
+                "CommentTime": "Posted on May 24, 2020 at 06:20pm",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
+            },
+            {
+                "isReply": false,
+                "authorName": "William",
+                "authorImage": "/img/blog/comment-03.jpg",
+                "CommentTime": "Posted on Mar 18, 2020 at 10:45am",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
+            }
+        ]
+    }
+}
