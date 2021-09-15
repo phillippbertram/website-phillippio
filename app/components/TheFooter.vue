@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-md-5 order-2 order-md-1">
             <div class="copyright">
-              <p>&copy; 2021 <b class="text-white">Phillipp Bertram</b> · Made with <i
+              <p>&copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
                   class="fa fa-heart text-danger"></i></p>
             </div>
           </div>
@@ -157,6 +157,7 @@ import data from '../data/footer.json';
 export default {
   data() {
     return {
+      copyrightYear: (new Date()).getFullYear(),
       data
     }
   }
