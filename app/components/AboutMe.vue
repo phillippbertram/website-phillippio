@@ -5,7 +5,9 @@
         <div class="col-12">
           <div class="section-title text-center">
             <span class="water-text">{{ data.about.sectionTitleWaterText }}</span>
-            <h2 class="title">{{ data.about.sectionTitle }}</h2>
+            <h2 class="title">
+              {{ data.about.sectionTitle }}
+            </h2>
           </div>
         </div>
       </div>
@@ -18,11 +20,13 @@
                 <img src="/img/bg/signature.png" alt="signature">
               </div>
               <div class="social-link">
-                <a :href="social.link" target="_blank" v-for="social in data.socials" :key="social.id">
-                  <i :class="social.icon"></i>
+                <a v-for="social in data.socials" :key="social.id" :href="social.link" target="_blank">
+                  <i :class="social.icon" />
                 </a>
               </div>
-              <button class="download-btn">Download <span>Resume</span></button>
+              <button class="download-btn">
+                Download <span>Resume</span>
+              </button>
             </div>
           </div>
         </div>
@@ -107,13 +111,13 @@
 </style>
 
 <script>
-import data from '../data/about.json';
+import data from '../data/about.json'
 
 export default {
-  data() {
+  data () {
     return {
       data
     }
   }
-};
+}
 </script>

@@ -1,37 +1,55 @@
 <template>
   <div class="mobile-navigation">
-    <nav class="offcanvas-navigation" id="offcanvas-navigation">
+    <nav id="offcanvas-navigation" class="offcanvas-navigation">
       <ul>
         <li>
-          <router-link to="/">HOME</router-link>
+          <router-link to="/">
+            HOME
+          </router-link>
         </li>
         <li>
-          <router-link to="/about">ABOUT ME</router-link>
+          <router-link to="/about">
+            ABOUT ME
+          </router-link>
         </li>
         <li class="menu-item-has-children">
-          <router-link to="/project">PROJECT</router-link>
+          <router-link to="/project">
+            PROJECT
+          </router-link>
           <ul class="sub-menu">
             <li>
-              <router-link to="/project">Project</router-link>
+              <router-link to="/project">
+                Project
+              </router-link>
             </li>
             <li>
-              <router-link to="/project/project-details">Project Details</router-link>
+              <router-link to="/project/project-details">
+                Project Details
+              </router-link>
             </li>
           </ul>
         </li>
         <li class="menu-item-has-children">
-          <router-link to="/blog">BLOG</router-link>
+          <router-link to="/blog">
+            BLOG
+          </router-link>
           <ul class="sub-menu">
             <li>
-              <router-link to="/blog">Blog</router-link>
+              <router-link to="/blog">
+                Blog
+              </router-link>
             </li>
             <li>
-              <router-link to="/blog/how-to-get-your-website-into-google-index-with-right-way-04">Blog Details</router-link>
+              <router-link to="/blog/how-to-get-your-website-into-google-index-with-right-way-04">
+                Blog Details
+              </router-link>
             </li>
           </ul>
         </li>
         <li>
-          <router-link to="/contact">CONTACT</router-link>
+          <router-link to="/contact">
+            CONTACT
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -41,35 +59,35 @@
 <script>
 export default {
   name: 'MobileNavMenu',
-  mounted() {
-    const offCanvasNav = document.querySelector('#offcanvas-navigation');
-    const offCanvasNavSubMenu = offCanvasNav.querySelectorAll('.sub-menu');
-    const anchorLinks = offCanvasNav.querySelectorAll('a');
+  mounted () {
+    const offCanvasNav = document.querySelector('#offcanvas-navigation')
+    const offCanvasNavSubMenu = offCanvasNav.querySelectorAll('.sub-menu')
+    const anchorLinks = offCanvasNav.querySelectorAll('a')
 
-    for (let i = 0; i < offCanvasNavSubMenu.length; i++){
-      offCanvasNavSubMenu[i].insertAdjacentHTML("beforebegin", "<span class='menu-expand'><i></i></span>");
+    for (let i = 0; i < offCanvasNavSubMenu.length; i++) {
+      offCanvasNavSubMenu[i].insertAdjacentHTML('beforebegin', "<span class='menu-expand'><i></i></span>")
     }
 
-    const menuExpand = offCanvasNav.querySelectorAll('.menu-expand');
-    const numMenuExpand = menuExpand.length;
+    const menuExpand = offCanvasNav.querySelectorAll('.menu-expand')
+    const numMenuExpand = menuExpand.length
 
     for (let i = 0; i < numMenuExpand; i++) {
-      menuExpand[i].addEventListener("click", (e) => {sideMenuExpand(e)});
+      menuExpand[i].addEventListener('click', (e) => { sideMenuExpand(e) })
     }
 
     for (let i = 0; i < anchorLinks.length; i++) {
-      anchorLinks[i].addEventListener("click", () => {closeMobileMenu()});
+      anchorLinks[i].addEventListener('click', () => { closeMobileMenu() })
     }
 
     const sideMenuExpand = (e) => {
-      e.currentTarget.parentElement.classList.toggle('active');
+      e.currentTarget.parentElement.classList.toggle('active')
     }
     const closeMobileMenu = () => {
-      const offcanvasMobileMenu = document.querySelector('#offcanvas-mobile-menu');
-      offcanvasMobileMenu?.classList.remove('active');
+      const offcanvasMobileMenu = document.querySelector('#offcanvas-mobile-menu')
+      offcanvasMobileMenu?.classList.remove('active')
     }
   }
-};
+}
 </script>
 
 <style lang="scss">

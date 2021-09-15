@@ -6,15 +6,22 @@
           <div class="col-12">
             <div class="testimonial-active">
               <swiper :options="swiperOption">
-                <div class="swiper-slide testimonial-item" v-for="testimonial in data.testimonials"
-                     :key="testimonial.id">
+                <div
+                  v-for="testimonial in data.testimonials"
+                  :key="testimonial.id"
+                  class="swiper-slide testimonial-item"
+                >
                   <div class="testimonial-inner text-center">
                     <div class="icon">
                       <img src="/img/icon/quote.png" alt="quote icon">
                     </div>
-                    <p class="testimonial-desc">{{ testimonial.desc }}</p>
+                    <p class="testimonial-desc">
+                      {{ testimonial.desc }}
+                    </p>
                     <div class="client-info">
-                      <h6 class="client-name">{{ testimonial.author }}</h6>
+                      <h6 class="client-name">
+                        {{ testimonial.author }}
+                      </h6>
                       <span class="client-desig">{{ testimonial.designation }}</span>
                     </div>
                   </div>
@@ -29,10 +36,10 @@
 </template>
 
 <script>
-import data from '../data/testimonial.json';
+import data from '../data/testimonial.json'
 
 export default {
-  data() {
+  data () {
     return {
       data,
       swiperOption: {
@@ -50,5 +57,5 @@ export default {
       }
     }
   }
-};
+}
 </script>

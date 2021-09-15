@@ -5,16 +5,18 @@
         <div class="col-12">
           <div class="section-title text-center">
             <span class="water-text">{{ data.sectionTitleWaterText }}</span>
-            <h2 class="title">{{ data.sectionTitle }}</h2>
+            <h2 class="title">
+              {{ data.sectionTitle }}
+            </h2>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <ResumeList :resume="data.education"/>
+          <ResumeList :resume="data.education" />
         </div>
         <div class="col-md-6 professional">
-          <ResumeList :resume="data.professional"/>
+          <ResumeList :resume="data.professional" />
         </div>
       </div>
     </div>
@@ -22,13 +24,13 @@
 </template>
 
 <script>
-import data from "../data/resume.json";
+import data from '../data/resume.json'
 
 export default {
-  data() {
+  data () {
     return {
       data
     }
   }
-};
+}
 </script>

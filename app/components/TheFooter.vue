@@ -8,11 +8,13 @@
               <ul class="footer-social-link">
                 <li v-for="(social, socials) in data.socials" :key="socials">
                   <a :href="social.link" target="_blank">
-                    <i :class=social.icon></i>
+                    <i :class="social.icon" />
                   </a>
                 </li>
               </ul>
-              <h3 class="footer-title">THANKS FOR STOPPING BY OUR WEBSITE!</h3>
+              <h3 class="footer-title">
+                THANKS FOR STOPPING BY OUR WEBSITE!
+              </h3>
               <p>Claritas est etiam processus dynamicus, qui sequitur mutationem .</p>
             </div>
           </div>
@@ -24,8 +26,11 @@
         <div class="row">
           <div class="col text-center">
             <div class="copyright">
-              <p>&copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
-                  class="fa fa-heart text-danger"></i></p>
+              <p>
+                &copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
+                  class="fa fa-heart text-danger"
+                />
+              </p>
             </div>
           </div>
         </div>
@@ -119,14 +124,14 @@
 </style>
 
 <script>
-import data from '../data/footer.json';
+import data from '../data/footer.json'
 
 export default {
-  data() {
+  data () {
     return {
       copyrightYear: (new Date()).getFullYear(),
       data
     }
   }
-};
+}
 </script>

@@ -146,21 +146,21 @@
                 "isReply": false,
                 "authorName": "Simon",
                 "authorImage": "/img/blog/comment-01.jpg",
-                "CommentTime": "Posted on Jan 15, 2020 at 09:15pm",
+                "commentTime": "Posted on Jan 15, 2020 at 09:15pm",
                 "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
             },
             {
                 "isReply": true,
                 "authorName": "Henry",
                 "authorImage": "/img/blog/comment-02.jpg",
-                "CommentTime": "Posted on May 24, 2020 at 06:20pm",
+                "commentTime": "Posted on May 24, 2020 at 06:20pm",
                 "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
             },
             {
                 "isReply": false,
                 "authorName": "William",
                 "authorImage": "/img/blog/comment-03.jpg",
-                "CommentTime": "Posted on Mar 18, 2020 at 10:45am",
+                "commentTime": "Posted on Mar 18, 2020 at 10:45am",
                 "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores adipisci optio ex, non pariatur itaque illo sunt?"
             }
         ]

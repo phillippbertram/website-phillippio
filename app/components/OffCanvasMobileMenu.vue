@@ -1,5 +1,5 @@
 <template>
-  <div class="offcanvas-menu" id="offcanvas-menu">
+  <div id="offcanvas-menu" class="offcanvas-menu">
     <div class="offcanvas-menu__inner">
       <div class="offcanvas-menu__header">
         <div class="container-fluid">
@@ -13,13 +13,13 @@
             </div>
             <div class="col-md-6 col-4">
               <div class="text-right">
-                <span class="mobile-navigation-close-icon" @click="mobiletoggleClass('removeClass', 'active')"></span>
+                <span class="mobile-navigation-close-icon" @click="mobiletoggleClass('removeClass', 'active')" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <MobileNavMenu/>
+      <MobileNavMenu />
     </div>
   </div>
 </template>
@@ -27,16 +27,16 @@
 <script>
 export default {
   methods: {
-    mobiletoggleClass(addRemoveClass, className) {
-      const el = document.querySelector('#offcanvas-menu');
+    mobiletoggleClass (addRemoveClass, className) {
+      const el = document.querySelector('#offcanvas-menu')
       if (addRemoveClass === 'addClass') {
-        el.classList.add(className);
+        el.classList.add(className)
       } else {
-        el.classList.remove(className);
+        el.classList.remove(className)
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

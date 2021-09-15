@@ -8,8 +8,8 @@
 
         <div class="col-xl-9 col-lg-8 order-1 order-lg-2">
           <div class="row mtn-30">
-            <div class="col-xl-6 mt-30" v-for="blogPost in data.blog.blogPosts" :key="blogPost.id">
-              <BlogPost :blogData="blogPost" />
+            <div v-for="blogPost in data.blog.blogPosts" :key="blogPost.id" class="col-xl-6 mt-30">
+              <BlogPost :blog-data="blogPost" />
             </div>
           </div>
 
@@ -19,7 +19,7 @@
                 <ul class="pagination-box">
                   <li>
                     <a class="previous" href="javascript:void(0)">
-                      <i class="fa fa-angle-left"></i>
+                      <i class="fa fa-angle-left" />
                     </a>
                   </li>
                   <li class="active">
@@ -36,7 +36,7 @@
                   </li>
                   <li>
                     <a class="next" href="javascript:void(0)">
-                      <i class="fa fa-angle-right"></i>
+                      <i class="fa fa-angle-right" />
                     </a>
                   </li>
                 </ul>
@@ -52,8 +52,8 @@
 <script>
 import data from '../data/blog.json'
 
-import BlogPost from './BlogPost';
-import SidebarWidget from './SidebarWidget';
+import BlogPost from './BlogPost'
+import SidebarWidget from './SidebarWidget'
 export default {
   components: {
     BlogPost,
@@ -61,10 +61,10 @@ export default {
   },
   data () {
     return {
-      data,
+      data
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
