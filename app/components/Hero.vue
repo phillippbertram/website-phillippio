@@ -111,7 +111,7 @@ export default {
     return {
       hero: {
         subTitle: "Hi, I'm <span>Phillipp Bertram</span>",
-        title: 'Web Designer, Art Director & UI/UX Designer',
+        title: 'CTO, Founder & passionated Developer',
         bgImg: '/img/hero/world.png',
         image: '/img/hero/hero-thumb.png'
       }

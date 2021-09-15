@@ -124,7 +124,7 @@
 </style>
 
 <script>
-import data from '../data/footer.json'
+import data from '../data/about.json'
 
 export default {
   data () {

@@ -16,9 +16,6 @@
           <div class="about-us">
             <div class="about-us__content text-center">
               <p>{{ data.about.aboutMe }}</p>
-              <div class="signature">
-                <img src="/img/bg/signature.png" alt="signature">
-              </div>
               <div class="social-link">
                 <a v-for="social in data.socials" :key="social.id" :href="social.link" target="_blank">
                   <i :class="social.icon" />
@@ -49,11 +46,6 @@
     p {
       color: #bbb;
       font-size: 16px;
-    }
-
-    .signature {
-      max-width: 170px;
-      margin: 30px auto 0;
     }
 
     .social-link {
