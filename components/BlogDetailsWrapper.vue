@@ -71,16 +71,7 @@
 <script>
 import data from '../data/blog.json'
 
-import SidebarWidget from '@/components/SidebarWidget';
-import BlogComment from '@/components/BlogComment';
-import BlogCommentForm from '@/components/BlogCommentForm';
-
 export default {
-  components: {
-    SidebarWidget,
-    BlogComment,
-    BlogCommentForm
-  },
   data () {
     return {
       data,

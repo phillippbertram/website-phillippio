@@ -30,14 +30,14 @@
       <ul class="recent-posts-inner">
         <li class="recent-posts" v-for="post in sidebar.recentPosts" :key="post.id">
           <div class="recent-posts-image">
-            <nuxt-link to="/blog-details">
+            <nuxt-link to="/blog/despite-not-being-built-for-business-it-does-let-you-display-01">
               <img :src="post.image" :alt="post.alt">
             </nuxt-link>
           </div>
           <div class="recent-posts-body">
             <span class="recent-posts-meta">{{ post.date }}</span>
             <h6 class="recent-posts-title">
-              <nuxt-link to="/blog-details">
+              <nuxt-link to="/blog/despite-not-being-built-for-business-it-does-let-you-display-01">
                 {{ post.title }}
               </nuxt-link>
             </h6>
