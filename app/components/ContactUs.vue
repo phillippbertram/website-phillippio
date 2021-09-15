@@ -5,7 +5,9 @@
         <div class="col-12">
           <div class="section-title text-center">
             <span class="water-text">{{ data.sectionTitleWaterText }}</span>
-            <h2 class="title">{{ data.sectionTitle }}</h2>
+            <h2 class="title">
+              {{ data.sectionTitle }}
+            </h2>
           </div>
         </div>
       </div>
@@ -13,15 +15,15 @@
         <div class="col-12">
           <div class="contact-info text-center">
             <div class="contact-info__list address">
-              <i class="fa fa-home"></i>
+              <i class="fa fa-home" />
               <p>212, Maya Palace, Barminghum, UK</p>
             </div>
             <div class="contact-info__list email">
-              <i class="fa fa-envelope"></i>
+              <i class="fa fa-envelope" />
               <a href="mailto:example@gmail.com">example@gmail.com</a>
             </div>
             <div class="contact-info__list phone">
-              <i class="fa fa-phone"></i>
+              <i class="fa fa-phone" />
               <a href="tel:+00123456789">+00123456789</a>
             </div>
           </div>
@@ -39,10 +41,12 @@
                 <input name="email" type="email" placeholder="Your Email">
               </div>
               <div class="col-12">
-                <textarea name="message" placeholder="Your Message"></textarea>
+                <textarea name="message" placeholder="Your Message" />
               </div>
               <div class="col-12">
-                <button class="btn btn-default">Send Message</button>
+                <button class="btn btn-default">
+                  Send Message
+                </button>
               </div>
             </div>
           </form>
@@ -53,12 +57,12 @@
 </template>
 
 <script>
-import data from '../data/contact.json';
+import data from '../data/contact.json'
 export default {
   data () {
     return {
       data
     }
   }
-};
+}
 </script>

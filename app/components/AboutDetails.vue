@@ -9,7 +9,9 @@
         </div>
         <div class="col-xl-7 offset-xl-1 col-lg-7">
           <div class="about-info">
-            <h3 class="title" v-html="data.aboutDetails.heading">{{ data.aboutDetails.heading }}</h3>
+            <h3 class="title" v-html="data.aboutDetails.heading">
+              {{ data.aboutDetails.heading }}
+            </h3>
             <p>{{ data.about.aboutMe }}</p>
             <div class="personal-info">
               <ul>
@@ -27,16 +29,17 @@
 </template>
 
 <script>
-import data from '../data/about.json';
-import VLazyImage from "v-lazy-image";
+import VLazyImage from 'v-lazy-image'
+import data from '../data/about.json'
+
 export default {
   components: {
-    VLazyImage,
+    VLazyImage
   },
-  data (){
+  data () {
     return {
       data
     }
   }
-};
+}
 </script>

@@ -14,43 +14,60 @@
             <nav class="main-menu">
               <ul>
                 <li>
-                  <nuxt-link to="/">HOME</nuxt-link>
+                  <nuxt-link to="/">
+                    HOME
+                  </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/about">ABOUT ME</nuxt-link>
+                  <nuxt-link to="/about">
+                    ABOUT ME
+                  </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/project">PROJECT</nuxt-link>
+                  <nuxt-link to="/project">
+                    PROJECT
+                  </nuxt-link>
                   <ul class="submenu">
                     <li>
-                      <nuxt-link to="/project">Project</nuxt-link>
+                      <nuxt-link to="/project">
+                        Project
+                      </nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link to="/project/project-details">Project Details</nuxt-link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <nuxt-link to="/blog">BLOG</nuxt-link>
-                  <ul class="submenu">
-                    <li>
-                      <nuxt-link to="/blog">Blog</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/blog/how-to-get-your-website-into-google-index-with-right-way-04">Blog Details
+                      <nuxt-link to="/project/project-details">
+                        Project Details
                       </nuxt-link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <nuxt-link to="/contact">CONTACT</nuxt-link>
+                  <nuxt-link to="/blog">
+                    BLOG
+                  </nuxt-link>
+                  <ul class="submenu">
+                    <li>
+                      <nuxt-link to="/blog">
+                        Blog
+                      </nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="/blog/how-to-get-your-website-into-google-index-with-right-way-04">
+                        Blog Details
+                      </nuxt-link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <nuxt-link to="/contact">
+                    CONTACT
+                  </nuxt-link>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="col-md-6 col-4 d-block d-lg-none">
             <div class="mobile-navigation-icon" @click="mobileToggleClass('addClass', 'active')">
-              <i></i>
+              <i />
             </div>
           </div>
         </div>
@@ -124,23 +141,22 @@
 }
 </style>
 
-
 <script>
 import FixedHeader from 'vue-fixed-header'
 
 export default {
   components: {
-    FixedHeader,
+    FixedHeader
   },
   methods: {
-    mobileToggleClass(addRemoveClass, className) {
-      const el = document.querySelector('#offcanvas-menu');
+    mobileToggleClass (addRemoveClass, className) {
+      const el = document.querySelector('#offcanvas-menu')
       if (addRemoveClass === 'addClass') {
-        el.classList.add(className);
+        el.classList.add(className)
       } else {
-        el.classList.remove(className);
+        el.classList.remove(className)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>

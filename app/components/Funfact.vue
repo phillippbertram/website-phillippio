@@ -5,18 +5,20 @@
         <div class="col-12">
           <div class="section-title text-center">
             <span class="water-text">My Challenge</span>
-            <h2 class="title">My Challenge</h2>
+            <h2 class="title">
+              My Challenge
+            </h2>
           </div>
         </div>
       </div>
       <div class="row mtn-50">
-        <div class="col-md-3 col-sm-6 mt-50" v-for="item in data.funfacts" :key="item.id">
+        <div v-for="item in data.funfacts" :key="item.id" class="col-md-3 col-sm-6 mt-50">
           <div class="funfact-item text-center">
-                        <span class="counter">
-                            <ICountUp
-                                :endVal="item.counter"
-                            />
-                        </span>
+            <span class="counter">
+              <ICountUp
+                :end-val="item.counter"
+              />
+            </span>
             <h6>{{ item.title }}</h6>
           </div>
         </div>
@@ -26,8 +28,8 @@
 </template>
 
 <script>
-import ICountUp from 'vue-countup-v2';
-import data from '../data/funfacts.json';
+import ICountUp from 'vue-countup-v2'
+import data from '../data/funfacts.json'
 export default {
   components: {
     ICountUp
@@ -37,5 +39,5 @@ export default {
       data
     }
   }
-};
+}
 </script>

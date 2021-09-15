@@ -7,12 +7,16 @@
             <div class="breadcrumb-wrap text-center">
               <div class="section-title">
                 <span class="water-text">Latest Blog</span>
-                <h2 class="title">Latest Blog</h2>
+                <h2 class="title">
+                  Latest Blog
+                </h2>
               </div>
               <nav aria-label="breadcrumb">
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <nuxt-link to="/">Home</nuxt-link>
+                    <nuxt-link to="/">
+                      Home
+                    </nuxt-link>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Blog
@@ -25,7 +29,7 @@
       </div>
     </div>
 
-    <BlogMainWrapper/>
+    <BlogMainWrapper />
   </div>
 </template>
 

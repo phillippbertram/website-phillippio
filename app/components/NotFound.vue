@@ -7,10 +7,14 @@
             <div class="image">
               <img src="~/assets/img/404.png" alt="404">
             </div>
-            <h1 class="heading-h3 text-white">Looks like you are lost.</h1>
+            <h1 class="heading-h3 text-white">
+              Looks like you are lost.
+            </h1>
             <div class="error-text">
-              <p class="text-white">It looks like nothing was found at this location. You can either go back to the
-                last page or go to homepage.</p>
+              <p class="text-white">
+                It looks like nothing was found at this location. You can either go back to the
+                last page or go to homepage.
+              </p>
               <div class="error-button-group">
                 <router-link class="btn btn-default" to="/">
                   Go Back To Homepage
@@ -29,7 +33,6 @@ export default {
   name: 'NotFound'
 }
 </script>
-
 
 <style lang="scss" scoped>
 @import '../assets/scss/_variables.scss';

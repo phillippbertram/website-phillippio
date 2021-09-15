@@ -1,19 +1,31 @@
 <template>
   <div class="comment-wrapper">
-    <h3 class="heading">{{ comment.heading }}</h3>
+    <h3 class="heading">
+      {{ comment.heading }}
+    </h3>
     <ul>
-      <li class="comment" v-for="comment in comment.comments" :key="comment.id"
-          :class="{'comment__reply': comment.isReply}">
+      <li
+        v-for="comment in comment.comments"
+        :key="comment.id"
+        class="comment"
+        :class="{'comment__reply': comment.isReply}"
+      >
         <div class="comment__avatar">
-          <v-lazy-image :src="comment.authorImage" alt="thumbnail"/>
+          <v-lazy-image :src="comment.authorImage" alt="thumbnail" />
         </div>
         <div class="comment__body">
           <div class="header">
-            <h6 class="author-name">{{ comment.authorName }}</h6>
-            <p class="comment-date">{{ comment.commentTime }}</p>
+            <h6 class="author-name">
+              {{ comment.authorName }}
+            </h6>
+            <p class="comment-date">
+              {{ comment.commentTime }}
+            </p>
           </div>
           <p>{{ comment.desc }}</p>
-          <button class="reply-btn">Reply</button>
+          <button class="reply-btn">
+            Reply
+          </button>
         </div>
       </li>
     </ul>
@@ -21,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import VLazyImage from "v-lazy-image";
+import VLazyImage from 'v-lazy-image'
 import { defineComponent } from '@vue/composition-api'
 
 interface Comment {
@@ -36,7 +48,7 @@ interface Comment {
 
 export default defineComponent({
   components: {
-    VLazyImage,
+    VLazyImage
   },
 
   props: {
@@ -44,6 +56,6 @@ export default defineComponent({
       type: Object as () => Comment,
       required: true
     }
-  },
-});
+  }
+})
 </script>

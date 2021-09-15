@@ -1,11 +1,11 @@
 <template>
-  <div class="google-map-area section" id="support">
-<!--    <GmapMap-->
-<!--        :center="{lat:52.482900, lng:-1.893460}"-->
-<!--        :zoom="12"-->
-<!--        map-type-id="terrain"-->
-<!--    >-->
-<!--    </GmapMap>-->
+  <div id="support" class="google-map-area section">
+    <!--    <GmapMap-->
+    <!--        :center="{lat:52.482900, lng:-1.893460}"-->
+    <!--        :zoom="12"-->
+    <!--        map-type-id="terrain"-->
+    <!--    >-->
+    <!--    </GmapMap>-->
   </div>
 </template>
 
@@ -19,6 +19,6 @@
 //
 // })
 export default {
-  name: 'GoogleMap',
+  name: 'GoogleMap'
 }
 </script>

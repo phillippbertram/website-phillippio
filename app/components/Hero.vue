@@ -4,7 +4,9 @@
       <div class="row align-items-center">
         <div class="col-xl-6 col-lg-6 col-md-6">
           <div class="hero__content">
-            <h5 class="hero__content--subtitle" v-html="hero.subTitle">{{ hero.subTitle }}</h5>
+            <h5 class="hero__content--subtitle" v-html="hero.subTitle">
+              {{ hero.subTitle }}
+            </h5>
             <h1 class="hero__content--title">
               {{ hero.title }}
             </h1>
@@ -99,21 +101,21 @@
 </style>
 
 <script>
-import VLazyImage from "v-lazy-image";
+import VLazyImage from 'v-lazy-image'
 
 export default {
   components: {
-    VLazyImage,
+    VLazyImage
   },
   data () {
     return {
-      "hero": {
-        "subTitle": "Hi, I'm <span>Phillipp Bertram</span>",
-        "title": "Web Designer, Art Director & UI/UX Designer",
-        "bgImg": "/img/hero/world.png",
-        "image": "/img/hero/hero-thumb.png"
+      hero: {
+        subTitle: "Hi, I'm <span>Phillipp Bertram</span>",
+        title: 'Web Designer, Art Director & UI/UX Designer',
+        bgImg: '/img/hero/world.png',
+        image: '/img/hero/hero-thumb.png'
       }
     }
   }
-};
+}
 </script>

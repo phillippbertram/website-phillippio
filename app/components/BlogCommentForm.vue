@@ -1,6 +1,8 @@
 <template>
   <div class="comment-wrapper">
-    <h3 class="heading">Leave Your Comment</h3>
+    <h3 class="heading">
+      Leave Your Comment
+    </h3>
     <div class="comment-form">
       <form>
         <div class="row">
@@ -14,10 +16,12 @@
           </div>
           <div class="col-12">
             <label>Your Comment Here</label>
-            <textarea class="comment-field mb-30" placeholder="Type Your Message"></textarea>
+            <textarea class="comment-field mb-30" placeholder="Type Your Message" />
           </div>
           <div class="col-12">
-            <button class="btn btn-default">Send Message</button>
+            <button class="btn btn-default">
+              Send Message
+            </button>
           </div>
         </div>
       </form>
