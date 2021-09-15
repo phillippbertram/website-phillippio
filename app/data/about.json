@@ -7,7 +7,7 @@
     "socials": [
         {
             "icon": "fa fa-facebook",
-            "link": "https://www.facebook.com/"
+            "link": "https://www.facebook.com/phillippbertram"
         },
         {
             "icon": "fa fa-twitter",
@@ -24,7 +24,7 @@
     ],
     "aboutDetails": {
         "image": "/img/about/about.jpg",
-        "heading": "I'm Phillipp Bertram, <br>UX/UI Designer &amp; Developer",
+        "heading": "I'm Phillipp Bertram, <br>CTO, Founder &amp; passionated Developer",
         "infoList": [
             {
                 "label": "Name",
@@ -32,31 +32,23 @@
             },
             {
                 "label": "Email",
-                "info": "example@gmail.com"
-            },
-            {
-                "label": "Skype",
-                "info": "abcxyz"
+                "info": "me@phillipp.io"
             },
             {
                 "label": "Website",
-                "info": "example.com"
+                "info": "phillipp.io"
             },
             {
                 "label": "Job",
-                "info": "Freelancer"
-            },
-            {
-                "label": "Phone",
-                "info": "(123)4567890"
+                "info": "CTO"
             },
             {
                 "label": "Address",
-                "info": "Inox Box 1546"
+                "info": "Osnabrueck"
             },
             {
                 "label": "Nationality",
-                "info": "Australian"
+                "info": "German"
             }
         ]
     }

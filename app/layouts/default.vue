@@ -2,9 +2,9 @@
   <div id="app" class="bg-color-dark">
     <!--    <div class="grid" v-for="i in 9" :key="i"></div>-->
     <div class="main-container">
-      <NavBar/>
+      <TheHeader/>
       <Nuxt/>
-      <Footer/>
+      <TheFooter/>
       <!--    <OffCanvasMobileMenu />-->
       <!--    <BackToTop />-->
     </div>

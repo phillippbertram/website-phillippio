@@ -1,10 +1,29 @@
 <template>
   <footer class="footer-area">
+    <div class="footer-main dark-bg section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <ul class="footer-social-link">
+                <li v-for="(social, socials) in data.socials" :key="socials">
+                  <a :href="social.link" target="_blank">
+                    <i :class=social.icon></i>
+                  </a>
+                </li>
+              </ul>
+              <h3 class="footer-title">THANKS FOR STOPPING BY OUR WEBSITE!</h3>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-5 order-2 order-md-1">
           <div class="copyright">
-            <p>{{ data.copyright }}</p>
+            <p>&copy; 2021 <b class="text-white">Phillipp Bertram</b> · Made with <i class="fa fa-heart text-danger"></i></p>
           </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
@@ -19,8 +38,20 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/scss/_variables.scss';
+
+.footer-main {
+  padding-top: 100px;
+  padding-bottom: 96px;
+
+  // responsive
+  @media #{$sm-device} {
+    padding-top: 62px;
+    padding-bottom: 56px;
+  }
+}
+
 .footer-area {
   color: $paragraph-light;
   font-size: 14px;
