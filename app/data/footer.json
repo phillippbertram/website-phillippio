@@ -1,25 +1,25 @@
 {
-    "copyright": "Copyright © 2021  All Right Reserved",
-    "socials": [
-        {
-            "text": "facebook",
-            "link": "https://www.facebook.com"
-        },
-        {
-            "text": "twitter",
-            "link": "https://twitter.com"
-        },
-        {
-            "text": "instagram",
-            "link": "https://www.instagram.com"
-        },
-        {
-            "text": "linkedin",
-            "link": "https://www.linkedin.com"
-        },
-        {
-            "text": "pinterest",
-            "link": "https://pinterest.com"
-        }
-    ]
+  "copyright": "Copyright © 2021  All Right Reserved",
+  "socials": [
+    {
+      "icon": "fa fa-github",
+      "text": "github",
+      "link": "https://www.github.com/phillippbertram"
+    },
+    {
+      "icon": "fa fa-facebook",
+      "text": "facebook",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "icon": "fa fa-linkedin",
+      "text": "linkedin",
+      "link": "https://www.linkedin.com"
+    },
+    {
+      "icon": "fa fa-xing",
+      "text": "xing",
+      "link": "https://www.xing.com"
+    }
+  ]
 }

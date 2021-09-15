@@ -19,18 +19,21 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 order-2 order-md-1">
-          <div class="copyright">
-            <p>&copy; 2021 <b class="text-white">Phillipp Bertram</b> · Made with <i class="fa fa-heart text-danger"></i></p>
+    <div class="footer-bottom black-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 order-2 order-md-1">
+            <div class="copyright">
+              <p>&copy; 2021 <b class="text-white">Phillipp Bertram</b> · Made with <i
+                  class="fa fa-heart text-danger"></i></p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-7 order-1 order-md-2">
-          <div class="social">
-            <a :href="social.link" target="_blank" v-for="social in data.socials" :key="social.id">
-              {{ social.text }}
-            </a>
+          <div class="col-md-7 order-1 order-md-2">
+            <div class="social">
+              <a :href="social.link" target="_blank" v-for="social in data.socials" :key="social.id">
+                {{ social.text }}
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -41,9 +44,30 @@
 <style lang="scss" scoped>
 @import '../assets/scss/_variables.scss';
 
+.footer-content {
+  .footer-title {
+    color: $white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 40px 0 25px;
+
+    // responsive
+    @media #{$sm-device} {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-style: italic;
+  }
+}
+
 .footer-main {
   padding-top: 100px;
   padding-bottom: 96px;
+  background-color: $bg-light;
 
   // responsive
   @media #{$sm-device} {
@@ -52,24 +76,30 @@
   }
 }
 
+.footer-bottom {
+  padding: 38px 0;
+}
+
 .footer-area {
   color: $paragraph-light;
   font-size: 14px;
-  padding: 30px 0;
   background-color: #0c0c0c;
 }
+
 .copyright {
   @media #{$sm-device}{
     text-align: center;
     padding-top: 10px;
   }
 }
+
 .social {
   text-align: right;
   // res
   @media #{$sm-device}{
     text-align: center;
   }
+
   a {
     color: $paragraph-light;
     line-height: 1;
@@ -78,20 +108,54 @@
     @media #{$md-device, $xxs-device}{
       margin-left: 20px;
     }
+
     &:first-child {
       margin-left: 0;
     }
+
     &:hover {
       color: $theme-color-primary;
     }
   }
 }
+
+.footer-social-link {
+  li {
+    display: inline-block;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      height: 36px;
+      width: 36px;
+      line-height: 36px;
+      font-size: 16px;
+      display: block;
+      color: #8f8f8f;
+      border-radius: 50%;
+      border: 1px solid #8f8f8f;
+    }
+
+    &:hover {
+      a {
+        color: $white;
+        background-color: $theme-color-primary;
+        border-color: $theme-color-primary;
+      }
+    }
+  }
+}
+
 </style>
 
 <script>
 import data from '../data/footer.json';
+
 export default {
-  data () {
+  data() {
     return {
       data
     }
