@@ -1,0 +1,24 @@
+{
+  "socials": [
+    {
+      "icon": "fa fa-github",
+      "text": "github",
+      "link": "https://www.github.com/phillippbertram"
+    },
+    {
+      "icon": "fa fa-facebook",
+      "text": "facebook",
+      "link": "https://www.facebook.com/phillipp.bertram"
+    },
+    {
+      "icon": "fa fa-linkedin",
+      "text": "linkedin",
+      "link": "https://www.linkedin.com/in/phillipp-bertram-0431b09a/"
+    },
+    {
+      "icon": "fa fa-xing",
+      "text": "xing",
+      "link": "https://www.xing.com/profile/Phillipp_Bertram/cv"
+    }
+  ]
+}
