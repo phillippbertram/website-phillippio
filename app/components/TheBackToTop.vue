@@ -1,7 +1,7 @@
 <template>
   <client-only>
     <back-to-top class="scroll-top">
-      <i class="fa fa-angle-up"/>
+      <i class="fa fa-angle-up" />
     </back-to-top>
   </client-only>
 </template>
