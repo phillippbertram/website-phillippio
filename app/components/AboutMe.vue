@@ -1,5 +1,5 @@
 <template>
-  <section class="about-us-area section-padding bg-color-light">
+  <section id="about" class="about-us-area section-padding bg-color-light">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -16,6 +16,9 @@
           <div class="about-us">
             <div class="about-us__content text-center">
               <p>{{ data.about.aboutMe }}</p>
+              <div class="logo">
+                <img src="/img/logo/logo-grey.png" alt="logo">
+              </div>
               <div class="social-link">
                 <a v-for="social in data.socials" :key="social.id" :href="social.link" target="_blank">
                   <i :class="social.icon" />
@@ -46,6 +49,11 @@
     p {
       color: #bbb;
       font-size: 16px;
+    }
+
+    .logo {
+      max-width: 170px;
+      margin: 30px auto 0;
     }
 
     .social-link {

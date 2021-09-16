@@ -19,9 +19,9 @@
                   </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/about">
+                  <a href="#about">
                     ABOUT ME
-                  </nuxt-link>
+                  </a>
                 </li>
                 <li>
                   <nuxt-link to="/project">
@@ -148,6 +148,57 @@ export default {
   components: {
     FixedHeader
   },
+
+  mounted () {
+    (function () {
+      scrollTo()
+    })()
+
+    function scrollTo () {
+      const links = document.querySelectorAll('.main-menu li a')
+      links.forEach(each => (each.onclick = scrollAnchors))
+    }
+
+    function scrollAnchors (e, respond = null) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top)
+      e.preventDefault()
+      const targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href')
+      const targetAnchor = document.querySelector(targetID)
+      if (!targetAnchor) { return }
+      const originalTop = distanceToTop(targetAnchor)
+      window.scrollBy({ top: originalTop - 75, left: 0, behavior: 'smooth' })
+      const checkIfDone = setInterval(function () {
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 0
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = '-1'
+          targetAnchor.focus()
+          clearInterval(checkIfDone)
+        }
+      }, 800)
+    }
+    // scroll spy js
+    window.addEventListener('load', function () {
+      const section = document.querySelectorAll('.main-container > *')
+      const sections = {}
+      let i = 0
+
+      Array.prototype.forEach.call(section, function (e) {
+        sections[e.id] = e.offsetTop - 85
+      })
+
+      window.onscroll = function () {
+        const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+
+        for (i in sections) {
+          if (sections[i] <= scrollPosition) {
+            document.querySelector('.nuxt-link-exact-active').setAttribute('class', ' ')
+            document.querySelector('a[href*=' + i + ']').setAttribute('class', 'nuxt-link-exact-active')
+          }
+        }
+      }
+    })
+  },
+
   methods: {
     mobileToggleClass (addRemoveClass, className) {
       const el = document.querySelector('#offcanvas-menu  ')
