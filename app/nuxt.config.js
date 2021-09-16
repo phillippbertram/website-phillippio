@@ -37,7 +37,8 @@ export default {
 
   plugins: [
     '@/plugins/composition-api',
-    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' },
+    { src: '@/plugins/back-to-top', mode: 'client' }
   ],
 
   css: [

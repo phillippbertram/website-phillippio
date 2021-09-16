@@ -150,7 +150,7 @@ export default {
   },
   methods: {
     mobileToggleClass (addRemoveClass, className) {
-      const el = document.querySelector('#offcanvas-menu')
+      const el = document.querySelector('#offcanvas-menu  ')
       if (addRemoveClass === 'addClass') {
         el.classList.add(className)
       } else {

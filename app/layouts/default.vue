@@ -5,8 +5,8 @@
       <TheHeader />
       <Nuxt />
       <TheFooter />
-      <!--    <OffCanvasMobileMenu />-->
-      <!--    <BackToTop />-->
+      <OffCanvasMobileMenu />
+      <TheBackToTop />
     </div>
   </div>
 </template>

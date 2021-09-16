@@ -13,19 +13,16 @@ $light-white: #f4f5f7;
 $ash-color: #d2d2d2;
 
 //== Brand Color
-$theme-color-primary: #8d9d6e;
-$theme-color-secondary: #48636a;
-$theme-color-3: #E8AF36;
-$theme-color-4: #e13b3b;
-$theme-color-5: #35A6E1;
-$theme-color-6: #e84855;
-$theme-color-7: #46a3da;
-$theme-color-8: #ff6c3a;
+$theme-color-primary: #EEB76B;
+
+//$theme-color-primary: #EEB76B; // FAVORIT
+//$theme-color-primary: #1597BB;
+$theme-color-secondary: #7E7474;
 $theme-color-dark: darken($theme-color-primary, 15%);
 $theme-color-light: lighten($theme-color-primary, 15%);
 $bdr-color: #ebebeb;
-$bg-dark: #161616;
-$bg-light: #181818;
+$bg-dark: darken(#1A202C, 5%);
+$bg-light: lighten($bg-dark, 3%);
 
 //== Alternative Color
 $white: #fff;
