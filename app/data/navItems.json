@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Home",
+    "to": "/"
+  },
+  {
+    "title": "About",
+    "to": "/about"
+  },
+  {
+    "title": "Project",
+    "to": "/project",
+    "subMenu": [
+      {
+        "title": "Project",
+        "to": "/project"
+      },
+      {
+        "title": "Project Details",
+        "to": "/project/project-details"
+      }
+    ]
+  },
+  {
+    "title": "Blog",
+    "to": "/blog",
+    "subMenu": [
+      {
+        "title": "Blog",
+        "to": "/blog"
+      },
+      {
+        "title": "Blog Details",
+        "to": "/blog/how-to-get-your-website-into-google-index-with-right-way-04"
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "to": "/contact"
+  }
+]
