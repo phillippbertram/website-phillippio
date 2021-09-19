@@ -15,12 +15,11 @@
               <span />
             </div>
             <ul class="main-menu">
-              <li><a href="#home" class="activee" @click="close_menu()">Home</a></li>
-              <li><a href="#about" @click="close_menu()">About</a></li>
-              <li><a href="#feature" @click="close_menu()">Features</a></li>
-              <li><a href="#review" @click="close_menu()">Review</a></li>
-              <li><a href="#screenshot" @click="close_menu()">Screenshot</a></li>
-              <li><a href="#support" @click="close_menu()">Support</a></li>
+              <li v-for="item in navItems" :key="item.title">
+                <nuxt-link :to="item.to">
+                  {{ item.title }}
+                </nuxt-link>
+              </li>
             </ul>
           </div>
         </div>
@@ -29,73 +28,25 @@
   </header>
 </template>
 <script>
-export default {
-  name: 'Navbar',
+import navItems from '../data/navItems.json'
 
+export default {
   data () {
     return {
+      navItems,
       load: false,
       limitPosition: 200,
       scrolled: false,
       lastPosition: 500
     }
   },
-  created () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   },
 
-  mounted () {
-    (function () {
-      scrollTo()
-    })()
-
-    function scrollTo () {
-      const links = document.querySelectorAll('.main-menu li a')
-      links.forEach(each => (each.onclick = scrollAnchors))
-    }
-
-    function scrollAnchors (e, respond = null) {
-      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top)
-      e.preventDefault()
-      const targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href')
-      const targetAnchor = document.querySelector(targetID)
-      if (!targetAnchor) { return }
-      const originalTop = distanceToTop(targetAnchor)
-      window.scrollBy({ top: originalTop - 75, left: 0, behavior: 'smooth' })
-      const checkIfDone = setInterval(function () {
-        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 0
-        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-          targetAnchor.tabIndex = '-1'
-          targetAnchor.focus()
-          clearInterval(checkIfDone)
-        }
-      }, 800)
-    }
-    // scroll spy js
-    window.addEventListener('load', function () {
-      const section = document.querySelectorAll('.main-container > *')
-      const sections = {}
-      let i = 0
-
-      Array.prototype.forEach.call(section, function (e) {
-        sections[e.id] = e.offsetTop - 85
-      })
-
-      window.onscroll = function () {
-        const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
-
-        for (i in sections) {
-          if (sections[i] <= scrollPosition) {
-            document.querySelector('.activee').setAttribute('class', ' ')
-            document.querySelector('a[href*=' + i + ']').setAttribute('class', 'activee')
-          }
-        }
-      }
-    })
-  },
   methods: {
     // responsive menu script
     display_menu () {
@@ -241,24 +192,10 @@ export default {
         display: block;
       }
 
-      &:before {
-        top: 50%;
-        left: -100%;
-        content: '';
-        height: 2px;
-        width: 100%;
-        background-color: $white;
-        position: absolute;
-        transition: 0.4s;
-
-        // responsive
-        @media #{$md-device, $sm-device} {
-          display: none;
-        }
-      }
-
       &:hover,
       &.activee {
+        color: $theme-color-primary;
+
         &:before {
           left: 0;
         }
@@ -356,12 +293,8 @@ export default {
       }
     }
 
-    &.navbar-style-2 {
-      background-color: #2d3e50;
-    }
-
     &.navbar-style-3 {
-      background-color: #252525;
+      background-color: $bg-dark;
     }
   }
 }
@@ -388,6 +321,7 @@ export default {
     }
   }
 }
+
 .bg-ebony {
   &.sticky {
     background-color: #2e3138;

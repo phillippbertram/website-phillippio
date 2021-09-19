@@ -2,7 +2,7 @@
   <div>
     <NotFound v-if="error.statusCode === 404" />
     <h1 v-else>
-      Whoops daisy...
+      Whoopsy daisy...
     </h1>
   </div>
 </template>
