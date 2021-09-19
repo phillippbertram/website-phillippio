@@ -8,12 +8,12 @@
               <ul class="footer-social-link">
                 <li v-for="(social, socials) in data.socials" :key="socials">
                   <a :href="social.link" target="_blank">
-                    <i :class="social.icon" />
+                    <i :class="social.icon"/>
                   </a>
                 </li>
               </ul>
               <h3 class="footer-title">
-                THANKS FOR STOPPING BY OUR WEBSITE!
+                THANKS FOR STOPPING BY MY WEBSITE <span class="fa fa-rocket text-danger"/>
               </h3>
               <p>Claritas est etiam processus dynamicus, qui sequitur mutationem .</p>
             </div>
@@ -29,7 +29,7 @@
               <p>
                 &copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
                   class="fa fa-heart text-danger"
-                />
+              />
               </p>
             </div>
           </div>
@@ -127,7 +127,7 @@
 import data from '../data/about.json'
 
 export default {
-  data () {
+  data() {
     return {
       copyrightYear: (new Date()).getFullYear(),
       data
