@@ -192,6 +192,10 @@ export default {
         display: block;
       }
 
+      &.nuxt-link-exact-active {
+        color: $theme-color-primary;
+      }
+
       &:hover,
       &.activee {
         color: $theme-color-primary;
