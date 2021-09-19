@@ -13,54 +13,17 @@
           <div class="col-lg-9 d-none d-lg-block">
             <nav class="main-menu">
               <ul>
-                <li>
-                  <nuxt-link to="/">
-                    HOME
+                <li v-for="item in navItems" :key="item.title">
+                  <nuxt-link :to="item.to">
+                    {{ item.title }}
                   </nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/about">
-                    ABOUT ME
-                  </nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/project">
-                    PROJECT
-                  </nuxt-link>
-                  <ul class="submenu">
-                    <li>
-                      <nuxt-link to="/project">
-                        Project
-                      </nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/project/project-details">
-                        Project Details
+                  <ul v-if="item.subMenu" class="submenu">
+                    <li v-for="submenu in item.subMenu" :key="submenu.title">
+                      <nuxt-link :to="submenu.to">
+                        {{ submenu.title }}
                       </nuxt-link>
                     </li>
                   </ul>
-                </li>
-                <li>
-                  <nuxt-link to="/blog">
-                    BLOG
-                  </nuxt-link>
-                  <ul class="submenu">
-                    <li>
-                      <nuxt-link to="/blog">
-                        Blog
-                      </nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link to="/blog/how-to-get-your-website-into-google-index-with-right-way-04">
-                        Blog Details
-                      </nuxt-link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <nuxt-link to="/contact">
-                    CONTACT
-                  </nuxt-link>
                 </li>
               </ul>
             </nav>
@@ -97,28 +60,34 @@
 // header navigation menu
 .main-menu {
   text-align: right;
+
   ul {
     li {
       display: inline-block;
       position: relative;
+
       a {
         color: $white;
         font-weight: 500;
         display: inline-block;
         padding: 30px;
+        text-transform: uppercase;
         // res
         @media #{$md-device}{
           padding: 25px 15px;
         }
+
         &.nuxt-link-exact-active {
           color: $theme-color-primary;
         }
       }
+
       &:hover > {
         a {
           color: $theme-color-primary;
         }
       }
+
       .submenu {
         position: absolute;
         top: 100%;
@@ -130,24 +99,30 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(15px);
+
         li {
           display: block;
           text-align-last: left;
+
           a {
             color: $white;
             display: block;
             padding: 10px 20px;
+            text-transform: none;
+
             &.nuxt-link-exact-active {
               color: $theme-color-primary;
             }
           }
         }
       }
+
       &:hover {
         .submenu {
           opacity: 1;
           visibility: visible;
           transform: translateY(0);
+
           li {
             &:hover > {
               a {
@@ -157,6 +132,7 @@
           }
         }
       }
+
       &:last-child {
         a {
           padding-right: 0;
@@ -230,10 +206,16 @@
 
 <script>
 import FixedHeader from 'vue-fixed-header'
+import navItems from '../data/navItems.json'
 
 export default {
   components: {
     FixedHeader
+  },
+  data () {
+    return {
+      navItems
+    }
   },
   methods: {
     mobileToggleClass (addRemoveClass, className) {

@@ -19,36 +19,17 @@
       </button>
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul id="mySidenav" class="navbar-nav mx-auto navbar-center">
-          <li class="nav-item">
-            <a v-scroll-to="'#home'" href="javascript: void(0);" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="{ el: '#about', offset: -2}"
-              href="javascript: void(0);"
-              class="nav-link"
-            >About</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="{ el:'#pricing', offset: -2}"
-              href="javascript: void(0);"
-              class="nav-link"
-            >Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="{ el:'#blog', offset: -1}"
-              href="javascript: void(0);"
-              class="nav-link"
-            >Blog</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="{ el:'#contact', offset:-50}"
-              href="javascript: void(0);"
-              class="nav-link"
-            >Contact Us</a>
+          <li v-for="item in navItems" :key="item.title" class="nav-item">
+            <nuxt-link :to="item.to" class="nav-link">
+              {{ item.title }}
+            </nuxt-link>
+<!--            <ul v-if="item.subMenu" class="submenu">-->
+<!--              <li v-for="submenu in item.subMenu" :key="submenu.title">-->
+<!--                <nuxt-link :to="submenu.to">-->
+<!--                  {{ submenu.title }}-->
+<!--                </nuxt-link>-->
+<!--              </li>-->
+<!--            </ul>-->
           </li>
         </ul>
       </div>
@@ -58,8 +39,13 @@
 </template>
 
 <script>
-
+import navItems from '../data/navItems.json'
 export default {
+  data () {
+    return {
+      navItems
+    }
+  },
   mounted: () => {
     window.onscroll = function () {
       onwindowScroll()
@@ -95,6 +81,7 @@ export default {
     display: inline-block;
     color: $bg-dark;
     text-decoration: none;
+    text-transform: uppercase;
     // font-family: $font-secondary;
   }
 }
