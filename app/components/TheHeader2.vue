@@ -48,11 +48,11 @@ export default {
   },
   mounted: () => {
     window.onscroll = function () {
-      onwindowScroll()
+      onWindowScroll()
     }
     const navbar = document.getElementById('navbar')
 
-    function onwindowScroll () {
+    function onWindowScroll () {
       if (document.body.scrollTop > 50 ||
           document.documentElement.scrollTop > 50
       ) {
