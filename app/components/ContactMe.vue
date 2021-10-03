@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-us-area section-padding bg-color-dark img-cover">
+  <section id="contact-me" class="contact-us-area section-padding bg-color-dark img-cover">
     <div class="container">
       <div class="row d-none">
         <div class="col-12">
@@ -16,15 +16,11 @@
           <div class="contact-info text-center">
             <div class="contact-info__list address">
               <i class="fa fa-home" />
-              <p>212, Maya Palace, Barminghum, UK</p>
+              <p>Albert-Einstein-Straße 1, 49076 Osnabrück</p>
             </div>
             <div class="contact-info__list email">
               <i class="fa fa-envelope" />
-              <a href="mailto:example@gmail.com">example@gmail.com</a>
-            </div>
-            <div class="contact-info__list phone">
-              <i class="fa fa-phone" />
-              <a href="tel:+00123456789">+00123456789</a>
+              <a href="mailto:example@gmail.com">me@phillipp.io</a>
             </div>
           </div>
         </div>

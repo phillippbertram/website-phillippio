@@ -29,7 +29,7 @@
               <p>
                 &copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
                   class="fa fa-heart text-danger"
-                />
+                /> by me ;)
               </p>
             </div>
           </div>

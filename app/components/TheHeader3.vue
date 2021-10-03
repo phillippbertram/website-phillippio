@@ -16,9 +16,12 @@
             </div>
             <ul class="main-menu">
               <li v-for="item in navItems" :key="item.title">
-                <nuxt-link :to="item.to">
+                <nuxt-link v-if="item.to.startsWith('/')" :to="item.to">
                   {{ item.title }}
                 </nuxt-link>
+                <a v-if="item.to.startsWith('#')" v-scroll-to="item.to" href="javascript: void(0);">
+                  {{ item.title }}
+                </a>
               </li>
             </ul>
           </div>

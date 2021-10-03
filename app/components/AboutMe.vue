@@ -1,4 +1,4 @@
-<template>
+av<template>
   <section id="about" class="about-us-area section-padding bg-color-light">
     <div class="container">
       <div class="row">
@@ -88,19 +88,6 @@
         &:last-child {
           margin-right: 0;
         }
-      }
-    }
-
-    .download-btn {
-      display: block;
-      font-size: 18px;
-      margin: 15px auto auto;
-      line-height: 1;
-      color: $theme-color-secondary;
-
-      span {
-        color: $theme-color-primary;
-        text-decoration: underline;
       }
     }
   }

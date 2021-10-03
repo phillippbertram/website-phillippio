@@ -5,20 +5,20 @@
         <div class="col-xl-6 col-lg-6 col-md-6">
           <div class="hero__content">
             <h5 class="hero__content--subtitle" v-html="hero.subTitle">
-              {{ hero.subTitle }}
             </h5>
             <h1 class="hero__content--title">
               {{ hero.title }}
             </h1>
+            <p class="hero__content--description">{{ hero.detailText }}</p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6">
           <div class="hero__thumb">
             <div class="hero__thumb--one">
-              <v-lazy-image :src="hero.bgImg" class="img-fluid rotateWorld" alt="image" />
+              <v-lazy-image :src="hero.bgImg" class="img-fluid rotateWorld" alt="image"/>
             </div>
             <div class="hero__thumb--two">
-              <v-lazy-image :src="hero.image" class="img-fluid" alt="image" />
+              <v-lazy-image :src="hero.image" class="img-fluid" alt="image"/>
             </div>
           </div>
         </div>
@@ -35,7 +35,6 @@
   //height: 100vh;
 
   &__content {
-    color: $theme-color-primary;
     max-width: 570px;
     float: right;
     // res
@@ -56,14 +55,17 @@
       font-weight: 700;
       margin-bottom: 30px;
       font-family: $heading-font;
+
       span {
-        color: $white;
+        color: $theme-color-primary;
       }
+
       // res
       @media #{$sm-device}{
         margin-bottom: 15px;
       }
     }
+
     &--title {
       font-size: 48px;
       font-weight: 700;
@@ -76,13 +78,19 @@
         font-size: 30px;
       }
     }
+
+    &--description {
+      margin-top: 24px;
+    }
   }
+
   &__thumb {
     margin-top: 100px;
     // res
     @media #{$sm-device}{
       margin-top: 30px
     }
+
     &--one {
       position: absolute;
       top: 100px;
@@ -93,6 +101,7 @@
         right: 0;
       }
     }
+
     &--two {
       position: relative;
     }
@@ -107,11 +116,12 @@ export default {
   components: {
     VLazyImage
   },
-  data () {
+  data() {
     return {
       hero: {
-        subTitle: "Hi, I'm <span>Phillipp Bertram</span>",
+        subTitle: "Hi, it's me <span>Phillipp Bertram</span>",
         title: 'CTO, Founder & passionated Developer',
+        detailText: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ',
         bgImg: '/img/hero/world.png',
         image: '/img/hero/hero-thumb.png'
       }
