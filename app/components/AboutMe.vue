@@ -24,9 +24,6 @@
                   <i :class="social.icon" />
                 </a>
               </div>
-              <button class="download-btn">
-                Download <span>Resume</span>
-              </button>
             </div>
           </div>
         </div>
