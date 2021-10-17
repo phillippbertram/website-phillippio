@@ -1,0 +1,63 @@
+{
+  "about": {
+    "sectionTitle": "About Me",
+    "sectionTitleWaterText": "About Me",
+    "aboutMe": "Hye, I'm Phillipp Bertram I'm residing in this beautiful world. I create websites and mobile apps with great UX and UI design.I have done work with big companie  sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam tellusaodio tincidunt auctor a ornare odio. maiores itaque dolores distinctio, quisquam fugiat harum deleniti? Sint assumendaVeritatis unde laboriosam aspernatur vitae, architecto dolorum illum cupiditate laborum."
+  },
+  "socials": [
+    {
+      "id": 1,
+      "icon": "fab fa-github",
+      "text": "github",
+      "link": "https://www.github.com/phillippbertram"
+    },
+    {
+      "id": 2,
+      "icon": "fab fa-facebook",
+      "text": "facebook",
+      "link": "https://www.facebook.com/phillipp.bertram"
+    },
+    {
+      "id": 3,
+      "icon": "fab fa-linkedin",
+      "text": "linkedin",
+      "link": "https://www.linkedin.com/in/phillipp-bertram-0431b09a/"
+    },
+    {
+      "id": 4,
+      "icon": "fab fa-xing",
+      "text": "xing",
+      "link": "https://www.xing.com/profile/Phillipp_Bertram/cv"
+    }
+  ],
+  "aboutDetails": {
+    "image": "/img/about/about.jpg",
+    "heading": "I'm Phillipp Bertram, <br>CTO, Founder &amp; passionated Developer",
+    "infoList": [
+      {
+        "label": "Name",
+        "info": "Phillipp Bertram"
+      },
+      {
+        "label": "Email",
+        "info": "me@phillipp.io"
+      },
+      {
+        "label": "Website",
+        "info": "phillipp.io"
+      },
+      {
+        "label": "Job",
+        "info": "CTO"
+      },
+      {
+        "label": "Address",
+        "info": "Osnabrueck"
+      },
+      {
+        "label": "Nationality",
+        "info": "German"
+      }
+    ]
+  }
+}
