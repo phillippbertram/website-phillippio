@@ -1,11 +1,11 @@
 <template>
-  <footer class='bg-dark-700 dark:text-light'>
+  <footer class='bg-dark-600 dark:text-light py-12'>
     <div class='container'>
       <!-- footer top start -->
-      <div class='flex flex-col justify-center items-center text-center gap-6 py-8'>
+      <div class='flex flex-col justify-center items-center text-center gap-6 pb-8'>
         <Logo />
         <h3 class='text-2xl font-semibold uppercase tracking-widest'>
-          Thanks for stopping by my website <span />
+          Thanks for stopping by my website
         </h3>
         <div class='social-links flex gap-2 sm:gap-3'>
           <a
@@ -21,7 +21,7 @@
       </div>
       <!-- footer top end -->
       <!-- footer bottom start -->
-      <div class='bg-dark-700 py-8'>
+      <div class='pt-8'>
         <div class='container text-center text-light-700 font-light'>
           <p>
             &copy; {{ copyrightYear }} <b class='text-white font-regular'>Phillipp Bertram</b> · Made with <i
