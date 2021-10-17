@@ -1,9 +1,9 @@
 <template>
   <!-- Banner start -->
   <section
-    class='flex flex-col sm:justify-between items-center sm:flex-row mt-2 sm:mt-6 lg:mt-12'
+    class='flex flex-col sm:justify-between items-center sm:flex-row my-4 sm:my-6 lg:my-12'
   >
-    <div class='w-full sm:w-1/3 text-left'>
+    <div class='w-full sm:w-1/3 md:w-2/3 text-left'>
       <h1
         class='text-3xl sm:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-light'
       >
@@ -15,9 +15,9 @@
         {{ hero.subTitle }}
       </p>
 
-      <div class='flex justify-center sm:block'>
+      <div class='flex justify-center sm:block mt-6 sm:mt-12 mb-6 sm:mb-0'>
         <BaseButton
-          class='flex justify-center items-center mt-12 mb-6 sm:mb-0'
+          class='flex justify-center items-center'
         >
           <i
             class='fas fa-chevron-down ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6'
@@ -27,9 +27,10 @@
       </div>
 
     </div>
-    <div class='w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0'>
+    <div class='w-full flex flex-col items-center content-enter justify-items-center'>
       <img
-        src='~assets/img/hero/developer-dark.svg'
+        class='object-fill h-36 sm:h-56 border-2 rounded-full shadow-xl'
+        src='~assets/img/hero/me.jpeg'
         alt='Developer'
       />
     </div>
