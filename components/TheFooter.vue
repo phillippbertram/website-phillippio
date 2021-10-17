@@ -28,7 +28,7 @@
     <div class='bg-dark-700'>
       <div class='container text-center py-8 text-light-700 font-light'>
         <p>
-          &copy; {{ copyrightYear }} <b class='text-white font-regular'>Phillipp Bertram</b> · Made with <i />
+          &copy; {{ copyrightYear }} <b class='text-white font-regular'>Phillipp Bertram</b> · Made with <i class='fas fa-heart text-red-500'/>
         </p>
       </div>
     </div>
