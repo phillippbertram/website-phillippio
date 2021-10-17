@@ -70,12 +70,9 @@
         </div>
 
         <div class='mt-6'>
-          <button
-            class='px-4 py-2.5 text-white font-medium tracking-wider bg-primary hover:bg-primary-600 rounded-lg'
-            type='submit'
-          >
+          <BaseButton>
             Send Message
-          </button>
+          </BaseButton>
         </div>
       </form>
     </div>

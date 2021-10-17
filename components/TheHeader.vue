@@ -60,25 +60,20 @@
             >
             <router-link
               to='/about'
-              class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-500'
+              class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-400'
             >About Me
             </router-link
             >
             <router-link
               to='/contact'
-              class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-500'
+              class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-400'
             >Contact
             </router-link
             >
             <div
-              class='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-light dark:border-dark-500'
+              class='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-light dark:border-dark-400'
             >
-              <button
-                class='sm:hidden block text-left text-md font-medium bg-primary hover:bg-primary-600 text-light shadow-sm rounded-md px-4 py-2 mt-2'
-                @click='toggleModal()'
-              >
-                Contact me
-              </button>
+              <BaseButton class='sm:hidden' @click='toggleModal'>Contact Me</BaseButton>
             </div>
           </div>
           <!-- Header links end -->
@@ -89,12 +84,9 @@
           >
             <!-- Contact me button start -->
             <div>
-              <button
-                class='text-md font-medium bg-primary hover:bg-primary-600 text-white shadow-sm rounded-lg px-5 py-2.5'
-                @click='toggleModal()'
-              >
+              <BaseButton @click='toggleModal()'>
                 Contact Me
-              </button>
+              </BaseButton>
             </div>
             <!-- Contact me button end -->
 
@@ -157,18 +149,20 @@ export default {
       this.theme = theme
     },
     toggleModal() {
-      if (this.modal) {
-        // Stop screen scrolling
-        document
-          .getElementsByTagName('html')[0]
-          .classList.remove('overflow-y-hidden')
-        this.modal = false
-      } else {
-        document
-          .getElementsByTagName('html')[0]
-          .classList.add('overflow-y-hidden')
-        this.modal = true
-      }
+      this.$router.push({path: '/contact'})
+      // Modal not working right now
+      // if (this.modal) {
+      //   // Stop screen scrolling
+      //   document
+      //     .getElementsByTagName('html')[0]
+      //     .classList.remove('overflow-y-hidden')
+      //   this.modal = false
+      // } else {
+      //   document
+      //     .getElementsByTagName('html')[0]
+      //     .classList.add('overflow-y-hidden')
+      //   this.modal = true
+      // }
     }
   }
 }
@@ -181,16 +175,14 @@ export default {
   @apply text-primary-700 dark:text-primary-400 font-medium;
 }
 
-
-/* TODO: backdrop-blur not working with modal
 .glassmorphic {
-  @apply backdrop-filter backdrop-blur-lg* bg-opacity-30;
+  @apply backdrop-filter backdrop-blur-lg bg-opacity-30;
 }
-*/
+
 
 /* class automatically set by fixed-header */
 .vue-fixed-header--isFixed {
-  @apply shadow-lg bg-dark-600;;
+  @apply shadow-lg;
 }
 
 .modal-body {
