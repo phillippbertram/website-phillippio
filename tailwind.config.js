@@ -7,7 +7,8 @@ module.exports = {
 		extend: {
 			colors: {
         dark: {
-          400: '#1E3851',
+          300: '#1E3851',
+          400: '#112d44',
           500: '#0d2436',
           DEFAULT: '#0d2436',
           600: '#0b1f30',
@@ -25,6 +26,7 @@ module.exports = {
           500: '#CC5A71',
           DEFAULT: '#CC5A71',
           600: '#b85166',
+          700: '#a3485a',
         },
 			},
 			container: {
