@@ -52,23 +52,23 @@
             :class="isOpen ? 'block' : 'hidden'"
             class='m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none'
           >
-            <router-link
+            <nuxt-link
               to='/projects'
               class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2'
             >Projects
-            </router-link
+            </nuxt-link
             >
-            <router-link
+            <nuxt-link
               to='/about'
               class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-400'
             >About Me
-            </router-link
+            </nuxt-link
             >
-            <router-link
+            <nuxt-link
               to='/contact'
               class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-400'
             >Contact
-            </router-link
+            </nuxt-link
             >
             <div
               class='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-light dark:border-dark-400'

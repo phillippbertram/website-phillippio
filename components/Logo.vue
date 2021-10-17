@@ -1,12 +1,12 @@
 <template>
   <div>
-    <router-link to='/'
+    <nuxt-link to='/'
     >
       <img
         src='~assets/img/logo/logo-light.png'
         class='h-10'
         alt='Logo'
       />
-    </router-link>
+    </nuxt-link>
   </div>
 </template>

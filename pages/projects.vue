@@ -1,5 +1,7 @@
 <template>
-  <h1>Projects</h1>
+  <section class='container'>
+    <h1 class='text-3xl text-white'>Projects</h1>
+  </section>
 </template>
 
 <script>
