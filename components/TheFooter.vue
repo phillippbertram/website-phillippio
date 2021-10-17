@@ -12,11 +12,9 @@
               :key='social.id'
               :href='social.url'
               target='__blank'
-              class='inline-flex justify-center items-center text-light-700 hover:text-primary hover:border-primary-400 dark:hover:text-primary-400 cursor-pointer border rounded-full w-12 h-12'
+              class='inline-flex justify-center items-center text-light-600 hover:text-primary hover:border-primary-400 dark:hover:text-primary-400 cursor-pointer border rounded-full w-12 h-12'
             >
-              <i
-                :data-feather='social.icon'
-              >{{ social.text.substring(0, 2) }}</i>
+              <i class="text-2xl" :class='social.icon'/>
             </a>
           </div>
         </div>

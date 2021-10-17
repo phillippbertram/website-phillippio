@@ -6,22 +6,26 @@
   },
   "socials": [
     {
-      "icon": "fa fa-github",
+      "id": 1,
+      "icon": "fab fa-github",
       "text": "github",
       "link": "https://www.github.com/phillippbertram"
     },
     {
-      "icon": "fa fa-facebook",
+      "id": 2,
+      "icon": "fab fa-facebook",
       "text": "facebook",
       "link": "https://www.facebook.com/phillipp.bertram"
     },
     {
-      "icon": "fa fa-linkedin",
+      "id": 3,
+      "icon": "fab fa-linkedin",
       "text": "linkedin",
       "link": "https://www.linkedin.com/in/phillipp-bertram-0431b09a/"
     },
     {
-      "icon": "fa fa-xing",
+      "id": 4,
+      "icon": "fab fa-xing",
       "text": "xing",
       "link": "https://www.xing.com/profile/Phillipp_Bertram/cv"
     }
