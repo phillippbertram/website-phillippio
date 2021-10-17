@@ -3,6 +3,7 @@
     <div class='main-container'>
       <TheHeader />
       <Nuxt />
+      <TheBackToTop />
       <TheFooter />
       <!--      <TheBackToTop />-->
     </div>

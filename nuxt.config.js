@@ -33,8 +33,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/composition-api',
-    { src: '~/plugins/back-to-top', mode: 'client' },
-    { src: '~/plugins/v-lazy.image', mode: 'client' }
+    { src: '~/plugins/back-to-top', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
