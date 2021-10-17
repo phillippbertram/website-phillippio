@@ -1,41 +1,41 @@
 <template>
-  <footer class="footer-area">
-    <div class="footer-main dark-bg section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer-content text-center">
-              <ul class="footer-social-link">
-                <li v-for="(social, socials) in data.socials" :key="socials">
-                  <a :href="social.link" target="_blank">
-                    <i :class="social.icon"/>
-                  </a>
-                </li>
-              </ul>
-              <h3 class="footer-title">
-                THANKS FOR STOPPING BY MY WEBSITE <span class="fa fa-rocket text-danger"/>
-              </h3>
-              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem .</p>
-            </div>
+  <footer class='pt-12'>
+    <!-- footer top start -->
+    <div class='container'>
+      <div class='text-center dark:text-light mt-8 border-t border-light-700 py-12'>
+        <div
+          class='flex flex-col justify-center items-center mb-4 sm:mb-8'
+        >
+          <div class='flex gap-4 sm:gap-8'>
+            <a
+              v-for='social in data.socials'
+              :key='social.id'
+              :href='social.url'
+              target='__blank'
+              class='inline-flex justify-center items-center text-light-700 hover:text-primary hover:border-primary-400 dark:hover:text-primary-400 cursor-pointer border rounded-full w-12 h-12'
+            >
+              <i
+                :data-feather='social.icon'
+              >{{ social.text.substring(0, 2) }}</i>
+            </a>
           </div>
         </div>
+        <h3 class='text-2xl font-semibold uppercase'>
+          Thanks for stopping by my website <span />
+        </h3>
+      </div>
+      <!-- footer top end -->
+    </div>
+    <!-- footer bottom start -->
+    <div class='bg-dark-700'>
+      <div class='container text-center py-8 text-light-700 font-light'>
+        <p>
+          &copy; {{ copyrightYear }} <b class='text-white font-regular'>Phillipp Bertram</b> · Made with <i />
+        </p>
       </div>
     </div>
-    <div class="footer-bottom black-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <div class="copyright">
-              <p>
-                &copy; {{ copyrightYear }} <b class="text-white">Phillipp Bertram</b> · Made with <i
-                  class="fa fa-heart text-danger"
-              />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- footer bottom end -->
+
   </footer>
 </template>
 
@@ -51,88 +51,3 @@ export default {
   }
 }
 </script>
-
-
-<!--<style lang="scss" scoped>-->
-<!--@import '../assets/scss/_variables.scss';-->
-
-<!--.footer-content {-->
-<!--  .footer-title {-->
-<!--    color: $white;-->
-<!--    font-weight: 800;-->
-<!--    letter-spacing: 3px;-->
-<!--    padding: 40px 0 25px;-->
-
-<!--    // responsive-->
-<!--    @media #{$sm-device} {-->
-<!--      font-size: 16px;-->
-<!--      line-height: 1.8;-->
-<!--    }-->
-<!--  }-->
-
-<!--  p {-->
-<!--    font-size: 14px;-->
-<!--    font-style: italic;-->
-<!--  }-->
-<!--}-->
-
-<!--.footer-main {-->
-<!--  padding-top: 100px;-->
-<!--  padding-bottom: 96px;-->
-<!--  background-color: $bg-light;-->
-
-<!--  // responsive-->
-<!--  @media #{$sm-device} {-->
-<!--    padding-top: 62px;-->
-<!--    padding-bottom: 56px;-->
-<!--  }-->
-<!--}-->
-
-<!--.footer-bottom {-->
-<!--  padding: 38px 0;-->
-<!--}-->
-
-<!--.footer-area {-->
-<!--  color: $paragraph-light;-->
-<!--  font-size: 14px;-->
-<!--  background-color: #0c0c0c;-->
-<!--}-->
-
-<!--.copyright {-->
-<!--  @media #{$sm-device}{-->
-<!--    text-align: center;-->
-<!--    padding-top: 10px;-->
-<!--  }-->
-<!--}-->
-
-<!--.footer-social-link {-->
-<!--  li {-->
-<!--    display: inline-block;-->
-<!--    margin-right: 15px;-->
-
-<!--    &:last-child {-->
-<!--      margin-right: 0;-->
-<!--    }-->
-
-<!--    a {-->
-<!--      height: 36px;-->
-<!--      width: 36px;-->
-<!--      line-height: 36px;-->
-<!--      font-size: 16px;-->
-<!--      display: block;-->
-<!--      color: #8f8f8f;-->
-<!--      border-radius: 50%;-->
-<!--      border: 1px solid #8f8f8f;-->
-<!--    }-->
-
-<!--    &:hover {-->
-<!--      a {-->
-<!--        color: $white;-->
-<!--        background-color: $theme-color-primary;-->
-<!--        border-color: $theme-color-primary;-->
-<!--      }-->
-<!--    }-->
-<!--  }-->
-<!--}-->
-
-<!--</style>-->

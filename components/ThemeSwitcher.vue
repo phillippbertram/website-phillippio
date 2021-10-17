@@ -4,7 +4,7 @@
 <!--    <i-->
 <!--      v-if="theme === 'light'"-->
 <!--      data-feather="moon"-->
-<!--      class="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light w-5"-->
+<!--      class="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-400 w-5"-->
 <!--    >🌙</i>-->
 <!--    <i-->
 <!--      v-else-->

@@ -24,7 +24,7 @@ export default {
 
 body {
   /* adds background color to the body */
-  @apply bg-light dark:bg-dark-darker;
+  @apply bg-light dark:bg-dark-500;
 }
 
 </style>

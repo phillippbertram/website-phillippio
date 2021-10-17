@@ -10,7 +10,7 @@
         Hi, I'm Phillipp<span class='ml-1 text-3xl dark:text-primary'>.</span>
       </h1>
       <p
-        class="mt-4 text-2xml sm:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400"
+        class="mt-4 text-2xml sm:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400 dark:text-light-700"
       >
         {{hero.subTitle}}
       </p>

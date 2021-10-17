@@ -11,7 +11,7 @@
         <!-- Theme switcher small screen start -->
         <!--        <theme-switcher-->
         <!--          :theme='theme'-->
-        <!--          class='block sm:hidden bg-light-dark dark:bg-dark-darker hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10'-->
+        <!--          class='block sm:hidden bg-light-600 dark:bg-dark-500 hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10'-->
         <!--          @themeChanged='updateTheme'-->
         <!--        />-->
         <!-- Theme switcher small screen end -->
@@ -26,7 +26,7 @@
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
-              class='h-7 w-7 fill-current text-dark-darker dark:text-light-dark'
+              class='h-7 w-7 fill-current text-dark-500 dark:text-light-600'
             >
               <path
                 v-if='isOpen'
@@ -53,27 +53,27 @@
       >
         <router-link
           to='/projects'
-          class='block text-left text-lg font-medium text-primary-dark dark:text-light-dark hover:text-dark-darker dark:hover:text-light-lighter  sm:mx-4 mb-2 sm:py-2'
+          class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2'
         >Projects
         </router-link
         >
         <router-link
           to='/about'
-          class='block text-left text-lg font-medium text-primary-dark dark:text-light-dark hover:text-dark-darker dark:hover:text-light-lighter  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-darker'
+          class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-500'
         >About Me
         </router-link
         >
         <router-link
           to='/contact'
-          class='block text-left text-lg font-medium text-primary-dark dark:text-light-dark hover:text-dark-darker dark:hover:text-light-lighter  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-darker'
+          class='block text-left text-lg font-medium text-primary-600 dark:text-light-600 hover:text-dark-500 dark:hover:text-light-400  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-light dark:border-dark-500'
         >Contact
         </router-link
         >
         <div
-          class='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-light dark:border-dark-darker'
+          class='border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-light dark:border-dark-500'
         >
           <button
-            class='sm:hidden block text-left text-md font-medium bg-primary hover:bg-primary-dark text-light shadow-sm rounded-md px-4 py-2 mt-2'
+            class='sm:hidden block text-left text-md font-medium bg-primary hover:bg-primary-600 text-light shadow-sm rounded-md px-4 py-2 mt-2'
             @click='showModal()'
           >
             Contact me
@@ -89,7 +89,7 @@
         <!-- Contact me button start -->
         <div>
           <button
-            class='text-md font-medium bg-primary hover:bg-primary-dark text-white shadow-sm rounded-lg px-5 py-2.5'
+            class='text-md font-medium bg-primary hover:bg-primary-600 text-white shadow-sm rounded-lg px-5 py-2.5'
             @click='showModal()'
           >
             Contact Me
@@ -100,7 +100,7 @@
         <!-- Theme switcher larger screen start -->
         <!--        <theme-switcher-->
         <!--          :theme='theme'-->
-        <!--          class='ml-8 bg-light dark:bg-dark-light-->
+        <!--          class='ml-8 bg-light dark:bg-dark-400-->
         <!--           px-3 py-2 shadow-sm rounded-xl cursor-pointer'-->
         <!--          @themeChanged='updateTheme'-->
         <!--        />-->
@@ -129,18 +129,18 @@
               class='modal-wrapper flex items-center z-30'
             >
               <div
-                class='modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-light-lighter dark:bg-dark-darker max-h-screen shadow-lg flex-row rounded-xl relative'
+                class='modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-light-400 dark:bg-dark-500 max-h-screen shadow-lg flex-row rounded-xl relative'
               >
                 <div
-                  class='modal-header flex justify-between gap-10 p-5 border-b border-light-dark dark:border-dark-light'
+                  class='modal-header flex justify-between gap-10 p-5 border-b border-light-600 dark:border-dark-400'
                 >
                   <h5
-                    class=' text-primary-dark dark:text-light text-2xl'
+                    class=' text-primary-600 dark:text-light text-2xl'
                   >
                     What project are you looking for?
                   </h5>
                   <button
-                    class='px-4 font-bold text-primary-dark dark:text-light'
+                    class='px-4 font-bold text-primary-600 dark:text-light'
                     @click='showModal()'
                   >
                     X
@@ -153,7 +153,7 @@
                     <div class=''>
                       <input
                         id='name'
-                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-darker rounded-lg text-md dark:font-medium bg-light-lighter dark:bg-dark-light test-primary-dark dark:text-light-dark'
+                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-500 rounded-lg text-md dark:font-medium bg-light-400 dark:bg-dark-400 test-primary-600 dark:text-light-600'
                         name='name'
                         type='text'
                         required=''
@@ -164,7 +164,7 @@
                     <div class='mt-6'>
                       <input
                         id='email'
-                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-darker rounded-lg text-md dark:font-medium bg-light-lighter dark:bg-dark-light text-primary-dark dark:text-light-dark'
+                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-500 rounded-lg text-md dark:font-medium bg-light-400 dark:bg-dark-400 text-primary-600 dark:text-light-600'
                         name='email'
                         type='text'
                         required=''
@@ -175,7 +175,7 @@
                     <div class='mt-6'>
                       <select
                         id='subject'
-                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-darker rounded-lg text-md dark:font-medium bg-light-lighter dark:bg-dark-light text-primary-dark dark:text-light-dark'
+                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-500 rounded-lg text-md dark:font-medium bg-light-400 dark:bg-dark-400 text-primary-600 dark:text-light-600'
                         name='subject'
                         type='text'
                         required=''
@@ -194,7 +194,7 @@
                     <div class='mt-6'>
 											<textarea
                         id='message'
-                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-darker rounded-lg text-md dark:font-medium bg-light-lighter dark:bg-dark-light text-primary-dark dark:text-light-dark'
+                        class='w-full px-5 py-2 border-1 border-gray-200 dark:border-dark-500 rounded-lg text-md dark:font-medium bg-light-400 dark:bg-dark-400 text-primary-600 dark:text-light-600'
                         name='message'
                         cols='14'
                         rows='6'
@@ -204,7 +204,7 @@
 
                     <div class='mt-6'>
                       <button
-                        class='px-6 py-2.5 text-white font-medium tracking-wider bg-primary hover:bg-primary-dark rounded-lg'
+                        class='px-6 py-2.5 text-white font-medium tracking-wider bg-primary hover:bg-primary-600 rounded-lg'
                         type='submit'
                       >
                         Send Request
@@ -216,7 +216,7 @@
                   class='modal-footer py-3 px-5 border0-t text-right'
                 >
                   <button
-                    class='px-6 py-2 bg-primary-light hover:bg-primary-dark rounded-lg font-bold text-light'
+                    class='px-6 py-2 bg-primary-400 hover:bg-primary-600 rounded-lg font-bold text-light'
                     @click='showModal()'
                   >
                     Close
