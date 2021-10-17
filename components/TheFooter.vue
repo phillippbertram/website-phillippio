@@ -1,5 +1,5 @@
 <template>
-  <footer class='bg-dark-600 dark:text-light py-12'>
+  <footer class='dark:text-light py-12'>
     <div class='container'>
       <!-- footer top start -->
       <div class='flex flex-col justify-center items-center text-center gap-6 pb-8'>
@@ -11,7 +11,7 @@
           <a
             v-for='social in data.socials'
             :key='social.id'
-            :href='social.url'
+            :href='social.link'
             target='__blank'
             class='inline-flex justify-center items-center text-light-600 hover:text-primary hover:border-primary-400 dark:hover:text-primary-400 cursor-pointer w-8 h-8'
           >

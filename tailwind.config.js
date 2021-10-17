@@ -28,6 +28,10 @@ module.exports = {
           600: '#b85166',
           700: '#a3485a',
         },
+        accent: {
+          500: '#15B8A6',
+          DEFAULT: '#15B8A6',
+        },
 			},
 			container: {
         center: true,

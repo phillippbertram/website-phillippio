@@ -4,10 +4,13 @@
     class='flex flex-col sm:justify-between items-center sm:flex-row my-4 sm:my-6 lg:my-12'
   >
     <div class='w-full sm:w-1/3 md:w-2/3 text-left'>
+      <h2 class='sm:text-lg sm:leading-snug font-semibold tracking-wide text-primary-500 dark:text-primary-500 mb-3 uppercase'>
+        Hi there,
+      </h2>
       <h1
         class='text-3xl sm:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-light'
       >
-        Hi, I'm Phillipp<span class='ml-1 text-5xl dark:text-primary'>.</span>
+        I'm Phillipp<span class='ml-1 text-5xl dark:text-primary'>.</span>
       </h1>
       <p
         class='mt-4 text-2xml sm:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400 dark:text-light-700'
@@ -29,9 +32,9 @@
     </div>
     <div class='w-full flex flex-col items-center content-enter justify-items-center'>
       <img
-        class='object-fill h-36 sm:h-56 border-2 rounded-full shadow-xl'
+        class='object-fill h-36 sm:h-56 border-4 rounded-full shadow-xl'
         src='~assets/img/hero/me.jpeg'
-        alt='Developer'
+        alt='Phillipp Bertram'
       />
     </div>
   </section>
