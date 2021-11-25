@@ -53,7 +53,7 @@
     "jsdom": "^18.0.0",
     "jsdom-global": "^3.0.2",
     "lint-staged": "^11.2.3",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.1",
     "prettier": "^2.3.2",
     "require-extension-hooks": "^0.3.3",
     "require-extension-hooks-babel": "^1.0.0",
