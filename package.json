@@ -31,8 +31,8 @@
     "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
-    "@babel/eslint-parser": "^7.14.7",
+    "@ava/babel": "^2.0.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@nuxt/types": "^2.15.7",
