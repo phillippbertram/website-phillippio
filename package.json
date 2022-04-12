@@ -31,7 +31,7 @@
     "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
+    "@ava/babel": "^2.0.0",
     "@babel/eslint-parser": "^7.14.7",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
@@ -54,7 +54,7 @@
     "jsdom-global": "^3.0.2",
     "lint-staged": "^11.2.3",
     "postcss": "^8.3.5",
-    "prettier": "^2.3.2",
+    "prettier": "^2.6.2",
     "require-extension-hooks": "^0.3.3",
     "require-extension-hooks-babel": "^1.0.0",
     "require-extension-hooks-vue": "^3.0.0",
