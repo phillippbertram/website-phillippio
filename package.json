@@ -23,7 +23,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/composition-api": "^0.29.3",
-    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/forms": "^0.5.0",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "vue-backtotop": "^1.6.1",
@@ -31,7 +31,7 @@
     "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
+    "@ava/babel": "^2.0.0",
     "@babel/eslint-parser": "^7.14.7",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
